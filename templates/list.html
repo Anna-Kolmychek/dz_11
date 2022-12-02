@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>ALL</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-<h1>Все кандидаты</h1>
-{% for candidate in candidates %}
-   <p><a href="/candidate/{{ candidate['id'] }}">{{ candidate['name'] }}</a></p>
-{% endfor %}
+<div class="main_box">
+    <h2>Все кандидаты</h2>
+    <hr>
+    {% for candidate in candidates %}
+       <p><a href="/candidate/{{ candidate['id'] }}">{{ candidate['name'] }}</a></p>
+    {% endfor %}
+</div>
 
 </body>
 </html>

@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Single</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-<h1>{{ candidate['name'] }}</h1>
-<p>{{ candidate['position'] }}</p>
-<img src="{{ candidate['picture'] }}" width=200/>
-<p>{{ candidate['skills'] }}</p>
+<div class="main_box">
+    <h2>{{ candidate['name'] }}</h2>
+    <hr>
+    <img src="{{ candidate['picture'] }}" class="persanl_icon"/>
+    <p>{{ candidate['position'] }}</p>
+    <p>{{ candidate['skills'] }}</p>
+</div>
 
 </body>
 </html>

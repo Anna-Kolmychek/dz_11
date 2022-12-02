@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>bySkill</title>
-</head>
+    <link rel="stylesheet" type="text/css" href="style.css">
 <body>
-<h1>Найдено со скиллом {{ skill_name }}: </h1>
 
-{% for candidate in candidates %}
-   <p><a href="/candidate/{{ candidate['id'] }}">{{ candidate['name'] }}</a></p>
-{% endfor %}
+<div class="main_box">
+    <h2>Найдено со скиллом {{ skill_name }}: </h2>
+    <hr>
+
+    {% for candidate in candidates %}
+       <p><a href="/candidate/{{ candidate['id'] }}">{{ candidate['name'] }}</a></p>
+    {% endfor %}
+</div>
 
 </body>
 </html>
